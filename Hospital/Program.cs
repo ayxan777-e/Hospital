@@ -81,3 +81,49 @@ var logs = new List<AppointmentLog>
 //_context.AppoinmentLogs.AddRange(logs);
 //_context.SaveChanges();
 #endregion
+
+#region The first variant of View
+
+//_context.Appointments
+//    .Include(a => a.Doctor)
+//    .Include(a => a.Patient)
+//    .ToList()
+//    .ForEach(a =>
+//    {
+//        Console.WriteLine($"DoctorName: {a.Doctor.FullName}, PatientName: {a.Patient.FullName}, AppoinmentDate: {a.AppointmentDate}");
+//    });
+#endregion
+
+#region The second variant of View
+//_context.Appointments
+//    .Select(a => new
+//    {
+//        DoctorName = a.Doctor.FullName,
+//        PatientName = a.Patient.FullName,
+//        AppoinmentDate = a.AppointmentDate,
+//    })
+//    .ToList()
+//    .ForEach(a =>
+//    {
+//        Console.WriteLine($"DoctorName: {a.DoctorName}, PatientName: {a.PatientName}, AppoinmentDate: {a.AppoinmentDate}");
+    
+//    });
+
+#endregion
+
+#region The third variant of View
+//var result=_context.Appointments
+//    .GroupBy(a => a.Doctor.FullName)
+//    .Select(g => new
+//    {
+//        DoctorName = g.Key,
+//        AppointmentCount = g.Count()
+//    })
+//    .ToList();
+//foreach (var item in result)
+//{
+//    Console.WriteLine($"{item.DoctorName} have {item.AppointmentCount} appointments");
+//}
+
+#endregion
+
