@@ -11,6 +11,6 @@ public class AppDbContext : DbContext
             "Server=DESKTOP-H42M0B3\\SQLEXPRESS01;Database=HospitalDb;Trusted_Connection=True;TrustServerCertificate=True");
     }
 
-    public DbSet<Patients> Patients { get; set; } = null!;
-    public DbSet<Doctors> Doctors { get; set; } = null!;
+    public DbSet<Patient> Patients { get; set; } = null!;
+    public DbSet<Doctor> Doctors { get; set; } = null!;
 }
