@@ -151,3 +151,31 @@ var logs = new List<AppointmentLog>
 //}
 
 #endregion
+
+#region GetInfo by PatientId    
+
+//var patient=_context.Patients
+//    .Include(p => p.Appointments)
+//    .ThenInclude(a => a.Doctor)
+//    .Include(p => p.Appointments)
+//    .ThenInclude(a => a.AppointmentLogs)
+//    .FirstOrDefault(p => p.Id == 2);
+
+//if (patient is not null)
+//{
+//    var result=patient.Appointments
+//        .SelectMany(a=>a.AppointmentLogs, (a, logs) => new
+//        {
+//            PatientName = patient.FullName,
+//            DoctorName = a.Doctor.FullName,
+//            AppointmentDate = a.AppointmentDate,
+//            logs.ActionType,
+//            logs.ActionDate
+//        })
+//        .ToList();
+//    foreach (var item in result)
+//    {
+//        Console.WriteLine($"{item.PatientName} has appointment with doctor {item.DoctorName} at {item.AppointmentDate}");
+//    }
+//}
+#endregion
