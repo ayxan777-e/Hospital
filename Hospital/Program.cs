@@ -106,7 +106,7 @@ var logs = new List<AppointmentLog>
 //    .ForEach(a =>
 //    {
 //        Console.WriteLine($"DoctorName: {a.DoctorName}, PatientName: {a.PatientName}, AppoinmentDate: {a.AppoinmentDate}");
-    
+
 //    });
 
 #endregion
@@ -127,3 +127,27 @@ var logs = new List<AppointmentLog>
 
 #endregion
 
+#region GetInfo by DoctorId
+
+//var doctor = _context.Doctors
+//    .Include(d => d.Appointments)
+//    .ThenInclude(a => a.AppointmentLogs)
+//    .FirstOrDefault(d => d.Id == 1);
+//if (doctor is not null)
+//{
+//    var result=doctor.Appointments
+//        .SelectMany(a => a.AppointmentLogs, (a ,logs) => new
+//        {
+//            DoctorName= doctor.FullName,
+//            AppointmentDate=a.AppointmentDate,
+//            logs.ActionType,
+//            logs.ActionDate
+//        })
+//        .ToList();
+//    foreach (var item in result)
+//    {
+//        Console.WriteLine($"DoctorName:{item.DoctorName} have appointment at {item.AppointmentDate} and {item.ActionType} __ {item.ActionDate}");
+//    }
+//}
+
+#endregion
