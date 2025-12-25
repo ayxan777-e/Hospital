@@ -1,6 +1,6 @@
 ﻿namespace Hospital.Data.Entities;
 
-public class AppoinmentLog
+public class AppointmentLog
 {
     public int Id { get; set; }
     public int AppointmentId { get; set; }
